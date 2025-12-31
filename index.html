@@ -1,169 +1,62 @@
-<!DOCTYPE html>
+/MyWeb                ← folder utama
+    index.html        ← halaman utama / daftar semua karakter
+    sitemap.xml
+    README.md
+    /pages            ← folder untuk semua halaman karakter
+        1-itachi.html
+        2-gojo.html
+        3-naruto.html
+        4-sasuke.html
+        5-luffy.html<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShiroWeb - Quotes Itachi Uchiha</title>
-    <style>
-        /* Reset & dasar */
-        * {margin:0; padding:0; box-sizing:border-box; font-family: 'Arial', sans-serif;}
-        body {background-color:#f5f5f5; color:#333;}
-
-        /* Header ala situs profesional */
-        header {
-            background-color:#fff;
-            box-shadow:0 2px 5px rgba(0,0,0,0.1);
-            padding:15px 30px;
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-        }
-        header h1 {
-            font-size:24px;
-            color:#000;
-        }
-        nav a {
-            margin-left:20px;
-            text-decoration:none;
-            color:#555;
-            font-weight:bold;
-        }
-        nav a:hover {color:#000;}
-
-        /* Sambutan / intro */
-        .intro {
-            background-color:#1a1a1a;
-            color:#fff;
-            text-align:center;
-            padding:60px 20px;
-        }
-        .intro h2 {font-size:36px; margin-bottom:20px;}
-        .intro p {font-size:18px; max-width:600px; margin:0 auto;}
-
-        /* Konten quotes */
-        .quotes-section {
-            max-width:800px;
-            margin:40px auto;
-            padding:0 20px;
-        }
-        .quote {
-            background-color:#fff;
-            padding:20px;
-            margin-bottom:15px;
-            border-left:5px solid #1a1a1a;
-            border-radius:5px;
-            box-shadow:0 2px 5px rgba(0,0,0,0.05);
-        }
-        .quote-number {font-weight:bold; margin-bottom:10px; color:#1a1a1a;}
-        .quote-text {font-size:18px; line-height:1.5;}
-
-        /* Footer */
-        footer {
-            text-align:center;
-            padding:20px;
-            background-color:#fff;
-            box-shadow:0 -2px 5px rgba(0,0,0,0.05);
-            margin-top:40px;
-            font-size:14px;
-            color:#777;
-        }
-    </style>
+    <title>Daftar Karakter Anime</title>
 </head>
 <body>
+    <h1>Daftar Karakter Anime</h1>
+    <ul>
+        <li><a href="pages/1-itachi.html">Itachi Uchiha</a></li>
+        <li><a href="pages/2-gojo.html">Gojo Satoru</a></li>
+        <li><a href="pages/3-naruto.html">Naruto Uzumaki</a></li>
+        <li><a href="pages/4-sasuke.html">Sasuke Uchiha</a></li>
+        <li><a href="pages/5-luffy.html">Monkey D. Luffy</a></li>
+    </ul>
+</body>
+</html><!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itachi Uchiha</title>
+</head>
+<body>
+    <h1>Itachi Uchiha</h1>
+    <p>Quotes: “Orang yang menakutkan bukanlah yang memiliki kekuatan, tapi yang tahu cara menggunakannya dengan tepat.”</p>
 
-    <!-- Header -->
-    <header>
-        <h1>ShiroWeb</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Anime</a>
-            <a href="#">Quotes</a>
-            <a href="#">Produk</a>
-        </nav>
-    </header>
+    <button id="prev">Halaman Sebelumnya</button>
+    <button id="next">Halaman Berikutnya</button>
 
-    <!-- Sambutan / Intro -->
-    <section class="intro">
-        <h2>Selamat Datang di ShiroWeb!</h2>
-        <p>Temukan kata-kata yang menginspirasi, filosofi mendalam, dan quotes anime favoritmu. Mulai perjalananmu dengan Itachi Uchiha, dan rasakan kekuatan kata yang menyentuh hati.</p>
-    </section>
+    <script>
+        const pages = [
+            "1-itachi.html",
+            "2-gojo.html",
+            "3-naruto.html",
+            "4-sasuke.html",
+            "5-luffy.html"
+        ];
 
-    <!-- Quotes Itachi -->
-    <section class="quotes-section">
-        <!-- Contoh format quotes -->
-        <div class="quote">
-            <div class="quote-number">1.</div>
-            <div class="quote-text">“Orang yang tidak memahami kedamaian akan selalu mencari peperangan.”</div>
-        </div>
-        <div class="quote">
-            <div class="quote-number">2.</div>
-            <div class="quote-text">“Kebenaran tidak selalu indah, tapi itu yang membuat hidup berarti.”</div>
-        </div>
-        <div class="quote">
-            <div class="quote-number">3.</div>
-            <div class="quote-text">“Keputusan yang sulit adalah yang membentuk siapa dirimu sebenarnya.”</div>
-        </div>
-        <div class="quote">
-            <div class="quote-number">4.</div>
-            <div class="quote-text">“Tidak ada yang abadi, itulah sebabnya setiap momen sangat berharga.”</div>
-        </div>
-        <div class="quote">
-            <div class="quote-number">5.</div>
-            <div class="quote-text">“Kesepian adalah teman yang mengajarkan kita kekuatan sejati.”</div>
-        </div>
-        <div class="quote">
-            <div class="quote-number">6.</div>
-            <div class="quote-text">“Pengorbanan adalah jalan menuju kedamaian yang sejati.”</div>
-        </div>
-        <div class="quote">
-            <div class="quote-number">7.</div>
-            <div class="quote-text">“Orang yang tersakiti bisa menjadi lebih kuat daripada yang tidak pernah terluka.”</div>
-        </div>
-        <div class="quote">
-            <div class="quote-number">8.</div>
-            <div class="quote-text">“Rahasia terbesar adalah memahami diri sendiri sebelum menghakimi orang lain.”</div>
-        </div>
-        <div class="quote">
-            <div class="quote-number">9.</div>
-            <div class="quote-text">“Kehidupan adalah pilihan; setiap langkah menentukan masa depanmu.”</div>
-        </div>
-        <div class="quote">
-            <div class="quote-number">10.</div>
-            <div class="quote-text">“Orang-orang yang kita cintai akan selalu hidup di dalam hati kita.”</div>
-        </div>
-        <div class="quote">
-            <div class="quote-number">11.</div>
-            <div class="quote-text">“Kekuatan sejati datang dari pengendalian diri dan pemahaman hati.”</div>
-        </div>
-        <div class="quote">
-            <div class="quote-number">12.</div>
-            <div class="quote-text">“Tidak ada jalan pintas menuju kedamaian; setiap rintangan adalah guru.”</div>
-        </div>
-        <div class="quote">
-            <div class="quote-number">13.</div>
-            <div class="quote-text">“Masa lalu adalah bayangan; jangan biarkan ia menguasai masa depanmu.”</div>
-        </div>
-        <div class="quote">
-            <div class="quote-number">14.</div>
-            <div class="quote-text">“Orang yang memahami kehilangan akan menghargai setiap kebahagiaan.”</div>
-        </div>
-        <div class="quote">
-            <div class="quote-number">15.</div>
-            <div class="quote-text">“Kebenaran kadang pahit, tapi kepahitan itu membuat kita tumbuh.”</div>
-        </div>
-        <div class="quote">
-            <div class="quote-number">16.</div>
-            <div class="quote-text">“Diam bukan berarti lemah; itu adalah tanda kekuatan yang tersembunyi.”</div>
-        </div>
-        <div class="quote">
-            <div class="quote-number">17.</div>
-            <div class="quote-text">“Terkadang pengorbanan pribadi adalah jalan untuk melindungi orang lain.”</div>
-        </div>
-        <div class="quote">
-            <div class="quote-number">18.</div>
-            <div class="quote-text">“Jangan pernah menilai seseorang hanya dari penampilan; lihatlah hatinya.”</div>
-        </div
-<footer>
-    &copy; 2025 Quotes Anime • Kembali ke <a href="../index.html">Beranda</a> • 
-    <a href="../gojo/">Gojo Satoru</a>
-    </footer>
+        const current = window.location.pathname.split("/").pop();
+        const idx = pages.indexOf(current);
+
+        document.getElementById("prev").onclick = () => {
+            if(idx > 0) window.location.href = pages[idx - 1];
+        }
+
+        document.getElementById("next").onclick = () => {
+            if(idx < pages.length - 1) window.location.href = pages[idx + 1];
+        }
+    </script>
+</body>
+</html>
