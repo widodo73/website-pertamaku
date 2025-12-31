@@ -8,94 +8,110 @@
 <style>
 body {
     margin: 0;
-    height: 100vh;
-    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
-    font-family: 'Segoe UI', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: linear-gradient(180deg, #0d0d0d, #1a1a1a);
+    font-family: Arial, sans-serif;
     color: white;
 }
 
-.container {
-    max-width: 360px;
-    padding: 25px;
-    background: rgba(0,0,0,0.6);
-    border-radius: 16px;
-    box-shadow: 0 0 30px rgba(255,255,255,0.05);
-    notice: center;
+header {
+    padding: 30px 20px;
     text-align: center;
-}
-
-h1 {
     font-size: 22px;
-    margin-bottom: 20px;
+    font-weight: bold;
     letter-spacing: 1px;
 }
 
-.quote {
-    font-size: 18px;
-    line-height: 1.6;
+.container {
+    padding: 0 15px 30px;
+    max-width: 420px;
+    margin: auto;
+}
+
+.quote-box {
+    background: rgba(255,255,255,0.05);
+    border-left: 4px solid #888;
+    padding: 15px;
     margin-bottom: 15px;
+    border-radius: 8px;
 }
 
-.character {
-    font-size: 14px;
+.quote-text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.quote-char {
+    margin-top: 8px;
+    font-size: 13px;
     opacity: 0.7;
-    margin-bottom: 25px;
-}
-
-button {
-    padding: 12px 20px;
-    background: #ffffff;
-    color: #000;
-    border: none;
-    border-radius: 25px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background: #bbbbbb;
+    text-align: right;
 }
 </style>
 </head>
 
 <body>
 
+<header>Anime Dark Quotes</header>
+
 <div class="container">
-    <h1>Anime Dark Quotes</h1>
 
-    <div class="quote" id="quote">
-        "Aku tidak membenci dunia ini, aku hanya tidak mengharapkannya."
+    <div class="quote-box">
+        <div class="quote-text">
+            "Aku tidak membenci dunia ini, aku hanya tidak mengharapkannya."
+        </div>
+        <div class="quote-char">— Itachi Uchiha</div>
     </div>
 
-    <div class="character" id="character">
-        — Itachi Uchiha
+    <div class="quote-box">
+        <div class="quote-text">
+            "Orang lemah tidak punya pilihan selain menerima takdir."
+        </div>
+        <div class="quote-char">— Madara Uchiha</div>
     </div>
 
-    <button onclick="gantiQuote()">Ganti Kutipan</button>
+    <div class="quote-box">
+        <div class="quote-text">
+            "Jika kamu tidak mengambil risiko, kamu tidak akan menciptakan masa depan."
+        </div>
+        <div class="quote-char">— Monkey D. Luffy</div>
+    </div>
+
+    <div class="quote-box">
+        <div class="quote-text">
+            "Menyerah adalah pilihan, tapi aku tidak memilihnya."
+        </div>
+        <div class="quote-char">— Levi Ackerman</div>
+    </div>
+
+    <div class="quote-box">
+        <div class="quote-text">
+            "Yang mati akan tetap mati, tapi yang hidup harus terus berjalan."
+        </div>
+        <div class="quote-char">— Gojo Satoru</div>
+    </div>
+
+    <div class="quote-box">
+        <div class="quote-text">
+            "Kesendirian adalah harga dari kekuatan."
+        </div>
+        <div class="quote-char">— Sasuke Uchiha</div>
+    </div>
+
+    <div class="quote-box">
+        <div class="quote-text">
+            "Dunia ini kejam, tapi juga indah."
+        </div>
+        <div class="quote-char">— Mikasa Ackerman</div>
+    </div>
+
+    <div class="quote-box">
+        <div class="quote-text">
+            "Aku akan berjalan di jalanku sendiri meski dunia menentang."
+        </div>
+        <div class="quote-char">— Eren Yeager</div>
+    </div>
+
 </div>
-
-<script>
-const quotes = [
-    { text: "Aku tidak membenci dunia ini, aku hanya tidak mengharapkannya.", char: "Itachi Uchiha" },
-    { text: "Orang lemah tidak punya pilihan selain menerima takdir.", char: "Madara Uchiha" },
-    { text: "Jika kamu tidak mengambil risiko, kamu tidak bisa menciptakan masa depan.", char: "Monkey D. Luffy" },
-    { text: "Menyerah adalah pilihan, tapi aku tidak memilihnya.", char: "Levi Ackerman" },
-    { text: "Yang mati akan tetap mati, tapi yang hidup harus terus berjalan.", char: "Gojo Satoru" },
-    { text: "Kesendirian adalah harga dari kekuatan.", char: "Sasuke Uchiha" },
-    { text: "Dunia ini kejam, tapi juga indah.", char: "Mikasa Ackerman" },
-    { text: "Aku akan berjalan di jalanku sendiri meski dunia menentang.", char: "Eren Yeager" }
-];
-
-function gantiQuote() {
-    const random = Math.floor(Math.random() * quotes.length);
-    document.getElementById("quote").innerText = `"${quotes[random].text}"`;
-    document.getElementById("character").innerText = "— " + quotes[random].char;
-}
-</script>
 
 </body>
 </html>
