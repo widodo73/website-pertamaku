@@ -3,64 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shiropoint - Quotes Gojo</title>
+    <title>Shiropoint - Inspirasi Anime & Lifestyle</title>
     <style>
-        body { margin:0; font-family: Arial, sans-serif; background:#f5f5f5; color:#111; }
-        header {
-            background:#1a73e8; color:white;
-            padding: 20px;
-            text-align:center;
-            font-size:2em;
-            font-weight:bold;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-        }
-        .container {
-            max-width: 800px;
-            margin: 30px auto;
-            background:white;
-            padding:20px;
-            border-radius:10px;
-            box-shadow:0 0 10px rgba(0,0,0,0.1);
-        }
-        .quote { margin-bottom:20px; font-size:1.2em; line-height:1.5em; }
-        .author { text-align:right; font-weight:bold; color:#1a73e8; }
-        .nav { text-align:center; margin-top:20px; }
-        .nav a {
-            display:inline-block;
-            background:#1a73e8;
-            color:white;
-            padding:10px 20px;
-            border-radius:5px;
-            margin:0 5px;
-            text-decoration:none;
-            transition:0.3s;
-        }
-        .nav a:hover { background:#155ab6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+        body { background-color: #fff; color: #222; line-height: 1.6; }
+        
+        /* Header & Nav */
+        header { border-bottom: 3px solid #000; padding: 20px; text-align: center; background: white; }
+        .logo { font-size: 28px; font-weight: 900; color: #e74c3c; text-transform: uppercase; letter-spacing: 3px; }
+        .logo span { color: #000; }
+        
+        nav { background: #f9f9f9; padding: 12px; text-align: center; border-bottom: 1px solid #ddd; position: sticky; top: 0; z-index: 100; }
+        nav a { margin: 0 12px; text-decoration: none; color: #555; font-weight: bold; font-size: 13px; }
+
+        .container { max-width: 700px; margin: 20px auto; padding: 0 20px; }
+        
+        .article-header { margin-bottom: 25px; }
+        .badge { background: #e74c3c; color: white; padding: 3px 8px; font-size: 11px; font-weight: bold; text-transform: uppercase; border-radius: 3px; }
+        .main-title { font-size: 32px; margin: 15px 0; line-height: 1.2; font-weight: 800; }
+        .meta { font-size: 13px; color: #888; margin-bottom: 20px; }
+
+        /* Quotes Styling */
+        .quote-list { margin-top: 30px; }
+        .quote-card { border-left: 4px solid #e74c3c; padding: 15px 20px; margin-bottom: 25px; background: #fcfcfc; box-shadow: 2px 2px 10px rgba(0,0,0,0.03); }
+        .quote-text { font-size: 17px; color: #333; font-weight: 500; }
+        .char-name { display: block; margin-top: 8px; font-size: 14px; font-weight: bold; color: #e74c3c; }
+
+        .pagination { text-align: center; margin: 40px 0; }
+        .next-page { background: #000; color: white; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 50px; transition: 0.3s; }
+        .next-page:hover { background: #e74c3c; }
     </style>
 </head>
 <body>
 
-<header>Shiropoint</header>
+<header>
+    <div class="logo">SHIRO<span>POINT</span></div>
+</header>
+
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="quote.html">LATEST</a>
+    <a href="#">ANIME</a>
+    <a href="#">MANGA</a>
+</nav>
 
 <div class="container">
-    <div class="quote">“Limitless technique, unlimited power. That’s how you fight with style.”</div>
-    <div class="author">- Gojo Satoru</div>
+    <div class="article-header">
+        <span class="badge">Lifestyle</span>
+        <h1 class="main-title">20 Kata-Kata Bijak Itachi Uchiha Tentang Kehidupan dan Pengorbanan</h1>
+        <p class="meta">Oleh <b>Admin Shiropoint</b> • 12 Februari 2025</p>
+        <hr>
+    </div>
 
-    <div class="quote">“The stronger you are, the lonelier you become.”</div>
-    <div class="author">- Gojo Satoru</div>
+    <div class="quote-list">
+        <div class="quote-card"><p class="quote-text">"Seseorang yang tidak bisa mengakui dirinya sendiri, akan gagal."</p><span class="char-name">— Itachi Uchiha</span></div>
+        <div class="quote-card"><p class="quote-text">"Kau tidak perlu memaafkanku. Apapun yang kau lakukan mulai sekarang, aku akan selalu menyayangimu."</p><span class="char-name">— Itachi Uchiha</span></div>
+        <div class="quote-card"><p class="quote-text">"Pengorbanan... Shinobi tanpa nama yang melindungi kedamaian dari dalam bayang-bayang. Itulah shinobi yang sebenarnya."</p><span class="char-name">— Itachi Uchiha</span></div>
+        <div class="quote-card"><p class="quote-text">"Kesenangan hari ini akan menjadi penderitaan hari esok."</p><span class="char-name">— Itachi Uchiha</span></div>
+        <div class="quote-card"><p class="quote-text">"Setiap orang hidup terikat oleh pengetahuan dan kesadaran mereka sendiri."</p><span class="char-name">— Itachi Uchiha</span></div>
+        <div class="quote-card"><p class="quote-text">"Bahkan lawan terkuat pun selalu memiliki kelemahan."</p><span class="char-name">— Itachi Uchiha</span></div>
+        <div class="quote-card"><p class="quote-text">"Saat kita bertumbuh, kita mulai menyadari betapa kejamnya dunia ini."</p><span class="char-name">— Itachi Uchiha</span></div>
+        <div class="quote-card"><p class="quote-text">"Tidak peduli seberapa kuat dirimu, jangan pernah mencoba memikul semuanya sendirian."</p><span class="char-name">— Itachi Uchiha</span></div>
+        <div class="quote-card"><p class="quote-text">"Menjadi hebat bukan berarti kau memiliki kekuatan. Tapi itu berarti kau bisa menerima kekuranganmu."</p><span class="char-name">— Itachi Uchiha</span></div>
+        <div class="quote-card"><p class="quote-text">"Kita tidak tahu orang macam apa kita sebenarnya sampai saat sebelum kematian kita."</p><span class="char-name">— Itachi Uchiha</span></div>
+    </div>
 
-    <div class="quote">“Do not underestimate your opponent, but never doubt yourself.”</div>
-    <div class="author">- Gojo Satoru</div>
-
-    <div class="quote">“I am the strongest, but strength without purpose is meaningless.”</div>
-    <div class="author">- Gojo Satoru</div>
-
-    <div class="quote">“Sometimes saving people is more than just winning a fight.”</div>
-    <div class="author">- Gojo Satoru</div>
-
-    <div class="nav">
-        <!-- Link ke halaman Itachi di folder pages -->
-        <a href="pages/quotes.html">Selanjutnya: Itachi Uchiha</a>
+    <div class="pagination">
+        <a href="quote.html" class="next-page">LIHAT 10 QUOTES BERIKUTNYA &raquo;</a>
     </div>
 </div>
 
