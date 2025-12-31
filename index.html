@@ -1,99 +1,165 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koleksi Quotes Anime - Widodo73</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-            max-width: 600px;
-        }
-        .header h1 {
-            color: #38bdf8;
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-        .header p {
-            color: #94a3b8;
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-        .container {
-            display: grid;
-            gap: 20px;
-            width: 100%;
-            max-width: 800px;
-        }
-        .quote-card {
-            background: #1e293b;
-            padding: 25px;
-            border-radius: 12px;
-            border-left: 4px solid #38bdf8;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
-        }
-        .quote-card:hover {
-            transform: translateY(-5px);
-        }
-        .text {
-            font-style: italic;
-            font-size: 1.1rem;
-            margin-bottom: 15px;
-            display: block;
-        }
-        .source {
-            font-weight: bold;
-            color: #38bdf8;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anime Quotes Daily</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f5f7;
+    color:#222;
+}
+
+/* HEADER */
+header{
+    background:#0b0b0b;
+    color:white;
+    padding:16px;
+}
+header h1{margin:0;font-size:22px;}
+header p{margin:5px 0 0;font-size:13px;color:#bbb;}
+
+/* LAYOUT */
+.container{
+    max-width:1100px;
+    margin:20px auto;
+    padding:0 15px;
+    display:flex;
+    gap:20px;
+}
+main{flex:3;}
+aside{flex:1;}
+
+/* CARD */
+.card{
+    background:white;
+    margin-bottom:20px;
+    border-radius:6px;
+    box-shadow:0 2px 6px rgba(0,0,0,.08);
+    overflow:hidden;
+}
+
+/* CHARACTER IMAGE */
+.character img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+.character h2{
+    margin:15px;
+    font-size:20px;
+}
+
+/* QUOTES */
+.quote{
+    padding:0 15px 10px;
+    font-style:italic;
+    font-size:15px;
+}
+.anime{
+    padding:0 15px 15px;
+    font-size:13px;
+    color:#666;
+}
+
+/* SIDEBAR */
+aside h3{margin-top:0;font-size:16px;}
+.sidebar-item{font-size:14px;margin-bottom:8px;}
+
+/* FOOTER */
+footer{
+    background:#111;
+    color:#aaa;
+    text-align:center;
+    padding:15px;
+    font-size:13px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .container{flex-direction:column;}
+    .character img{height:200px;}
+}
+</style>
 </head>
 <body>
 
-    <div class="header">
-        <h1>Inspirasi dari Dunia Anime</h1>
-        <p>Selamat datang! Dalam kehidupan, kita sering menghadapi tantangan. Berikut adalah beberapa kutipan singkat dan inspiratif dari anime yang dapat membangkitkan semangatmu.</p>
-    </div>
+<header>
+<h1>Anime Quotes Daily</h1>
+<p>Quotes anime • Motivasi • Dark vibe</p>
+</header>
 
-    <div class="container">
-        <div class="quote-card">
-            <span class="text">"Jangan mati sebelum kamu benar-benar mati."</span>
-            <span class="source">— Bleach</span>
-        </div>
+<div class="container">
 
-        <div class="quote-card">
-            <span class="text">"Dunia ini tidak sempurna, tetapi tetap berusaha melakukan yang terbaik untuk kita."</span>
-            <span class="source">— Fullmetal Alchemist</span>
-        </div>
+<main>
 
-        <div class="quote-card">
-            <span class="text">"Kamu bisa mati kapan saja, tetapi hidup membutuhkan keberanian sejati."</span>
-            <span class="source">— Rurouni Kenshin</span>
-        </div>
+<!-- GOJO -->
+<div class="card character">
+<img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b" alt="Gojo Satoru">
+<h2>Gojo Satoru</h2>
 
-        <div class="quote-card">
-            <span class="text">"Jangan menangis, lihatlah ke langit."</span>
-            <span class="source">— One Piece</span>
-        </div>
+<p class="quote">"Kalau kamu lemah hari ini, jangan salahkan dunia besok."</p>
+<p class="quote">"Kekuatan tanpa mental hanya akan runtuh."</p>
+<p class="quote">"Dunia ini nggak adil, makanya kamu harus jadi lebih kuat."</p>
+<p class="quote">"Jangan berharap dimengerti jika kamu belum berani berdiri."</p>
+<p class="quote">"Orang kuat tidak ribut, dia membuktikan."</p>
 
-        <div class="quote-card">
-            <span class="text">"Tidak apa-apa menjadi lemah, selama kamu masih hidup."</span>
-            <span class="source">— Noragami</span>
-        </div>
-    </div>
+<p class="anime">— Jujutsu Kaisen</p>
+</div>
+
+<!-- ITACHI -->
+<div class="card character">
+<img src="https://images.unsplash.com/photo-1520975922284-9f2a17c74c79" alt="Itachi Uchiha">
+<h2>Itachi Uchiha</h2>
+
+<p class="quote">"Orang lemah selalu menyalahkan keadaan."</p>
+<p class="quote">"Pengorbanan jarang dipahami oleh yang tidak menjalaninya."</p>
+<p class="quote">"Kebenaran kadang terlalu berat untuk diterima."</p>
+<p class="quote">"Aku memilih menanggung kebencian demi kedamaian."</p>
+<p class="quote">"Tidak semua pahlawan ingin dikenang."</p>
+
+<p class="anime">— Naruto Shippuden</p>
+</div>
+
+<!-- LEVI -->
+<div class="card character">
+<img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Levi Ackerman">
+<h2>Levi Ackerman</h2>
+
+<p class="quote">"Kalau ragu, kamu sudah kalah."</p>
+<p class="quote">"Tidak bertindak adalah pilihan terburuk."</p>
+<p class="quote">"Hasil datang dari keputusan, bukan doa saja."</p>
+<p class="quote">"Berhenti berharap, mulai bergerak."</p>
+
+<p class="anime">— Attack on Titan</p>
+</div>
+
+</main>
+
+<aside>
+<div class="card">
+<h3>Kategori</h3>
+<div class="sidebar-item">🔥 Dark Quotes</div>
+<div class="sidebar-item">⚔️ Pejuang Hidup</div>
+<div class="sidebar-item">🖤 Kehidupan</div>
+</div>
+
+<div class="card">
+<h3>Tentang</h3>
+<p style="font-size:14px">
+Kumpulan quotes anime untuk kamu yang lagi berjuang diam-diam.
+</p>
+</div>
+</aside>
+
+</div>
+
+<footer>
+© 2025 Anime Quotes Daily
+</footer>
 
 </body>
 </html>
