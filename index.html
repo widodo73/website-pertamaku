@@ -3,97 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnimeNews - Portal Anime Terlengkap</title>
+    <title>AnimeNews - Terpopuler</title>
     <style>
-        /* Gaya Dasar */
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f4f4f4; color: #333; }
-        a { text-decoration: none; color: inherit; }
+        * { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; background-color: #fff; color: #333; }
+        
+        /* Top Header */
+        .top-bar { display: flex; justify-content: space-between; align-items: center; padding: 10px 15px; border-bottom: 1px solid #eee; }
+        .menu-icon { font-size: 24px; cursor: pointer; }
+        .logo-img { font-size: 22px; font-weight: 800; color: #004a8e; letter-spacing: -1px; }
+        .logo-img span { color: #f39c12; }
+        .header-icons { display: flex; gap: 15px; align-items: center; }
 
-        /* Header & Navigasi */
-        header { background-color: #ffffff; padding: 15px 20px; border-bottom: 2px solid #e0e0e0; sticky; top: 0; z-index: 100; }
-        .logo { font-size: 24px; font-weight: bold; color: #e74c3c; }
-        nav { margin-top: 10px; overflow-x: auto; white-space: nowrap; padding-bottom: 5px; }
-        nav a { margin-right: 20px; font-weight: 600; color: #555; font-size: 14px; }
-        nav a:hover { color: #e74c3c; }
+        /* Navigation Scrollable */
+        .nav-scroll { display: flex; overflow-x: auto; padding: 10px 15px; border-bottom: 1px solid #eee; gap: 20px; scrollbar-width: none; }
+        .nav-scroll::-webkit-scrollbar { display: none; }
+        .nav-item { font-size: 14px; font-weight: 700; color: #555; white-space: nowrap; text-decoration: none; position: relative; }
+        .nav-item.active { color: #000; }
+        .nav-item.active::after { content: ''; position: absolute; width: 4px; height: 4px; background: red; border-radius: 50%; top: -2px; right: -6px; }
 
-        /* Bagian Tag Terpopuler (Inspirasi Gambar) */
-        .trending-tags { background: white; padding: 15px 20px; margin-top: 10px; }
-        .trending-tags h3 { font-size: 16px; margin-bottom: 10px; color: #2980b9; }
-        .tag-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-        .tag-item { font-size: 14px; font-weight: bold; color: #444; }
-        .tag-item span { color: #e74c3c; margin-right: 5px; }
+        /* Headline Section */
+        .headline { padding: 20px 15px 10px; }
+        .headline h1 { font-size: 20px; color: #004a8e; margin: 0; }
+        .date { font-size: 12px; color: #888; margin-top: 5px; }
 
-        /* Daftar Artikel / Berita */
-        .content { padding: 15px; }
-        .news-card { display: flex; background: white; margin-bottom: 15px; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .news-image { width: 120px; height: 120px; background-color: #ddd; flex-shrink: 0; }
-        .news-image img { width: 100%; height: 100%; object-fit: cover; }
-        .news-info { padding: 12px; }
-        .news-info h2 { font-size: 16px; margin: 0 0 8px 0; line-height: 1.4; color: #222; }
-        .news-meta { font-size: 12px; color: #888; }
+        /* Trending Tags */
+        .tags-section { padding: 15px; border-top: 8px solid #f4f4f4; }
+        .tags-section h3 { font-size: 16px; color: #004a8e; margin-bottom: 15px; }
+        .tag-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        .tag-link { text-decoration: none; color: #333; font-weight: 700; font-size: 14px; display: flex; align-items: center; }
+        .tag-link span { color: #e74c3c; margin-right: 8px; font-size: 18px; }
 
-        /* Tombol Footer Aktif */
-        footer { text-align: center; padding: 20px; font-size: 12px; color: #aaa; }
+        /* Article List */
+        .article-list { border-top: 8px solid #f4f4f4; }
+        .article-item { display: flex; padding: 15px; border-bottom: 1px solid #eee; text-decoration: none; gap: 12px; }
+        .article-img { width: 110px; height: 110px; border-radius: 8px; overflow: hidden; background: #eee; flex-shrink: 0; }
+        .article-img img { width: 100%; height: 100%; object-fit: cover; }
+        .article-content { display: flex; flex-direction: column; justify-content: space-between; }
+        .article-content h2 { font-size: 15px; margin: 0; line-height: 1.4; color: #222; font-weight: 600; }
+        .article-meta { font-size: 11px; color: #999; margin-top: 5px; }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">Anime<span>News</span></div>
-        <nav>
-            <a href="index.html">Terpopuler</a>
-            <a href="#">Rekomendasi</a>
-            <a href="pages/quotes.html">Quotes</a>
-            <a href="pages/berita.html">Berita</a>
-            <a href="#">Jadwal Rilis</a>
-        </nav>
-    </header>
-
-    <div class="trending-tags">
-        <h3># Tag Terpopuler</h3>
-        <div class="tag-list">
-            <div class="tag-item"><span>#</span> solo leveling</div>
-            <div class="tag-item"><span>#</span> gear 5 luffy</div>
-            <div class="tag-item"><span>#</span> blue lock s2</div>
-            <div class="tag-item"><span>#</span> uzumaki naruto</div>
-            <div class="tag-item"><span>#</span> movie anime 2026</div>
+    <div class="top-bar">
+        <div class="menu-icon">☰</div>
+        <div class="logo-img">anime<span>news</span></div>
+        <div class="header-icons">
+            <span>🔍</span>
+            <span style="color: red; font-weight: bold; border: 1px solid red; padding: 2px 5px; border-radius: 4px; font-size: 10px;">LIVE</span>
         </div>
     </div>
 
-    <div class="content">
-        <a href="pages/berita.html" class="news-card">
-            <div class="news-image">
-                <img src="https://via.placeholder.com/120" alt="News"> </div>
-            <div class="news-info">
-                <h2>Sutradara Ungkap Bocoran Terbaru Mengenai Kelanjutan Anime Solo Leveling</h2>
-                <div class="news-meta">AnimeNews | 1 jam yang lalu</div>
+    <div class="nav-scroll">
+        <a href="#" class="nav-item active">Terpopuler</a>
+        <a href="#" class="nav-item">Rekomendasi</a>
+        <a href="#" class="nav-item">Quotes</a>
+        <a href="#" class="nav-item">Update</a>
+        <a href="#" class="nav-item">Manga</a>
+    </div>
+
+    <div class="headline">
+        <h1>Terpopuler di AnimeNews</h1>
+        <div class="date">Rabu, 31 Desember 2025</div>
+    </div>
+
+    <div class="tags-section">
+        <h3>Tag Terpopuler</h3>
+        <div class="tag-grid">
+            <a href="#" class="tag-link"><span>#</span> solo leveling</a>
+            <a href="#" class="tag-link"><span>#</span> luffy gear 5</a>
+            <a href="#" class="tag-link"><span>#</span> boruto chapter 2</a>
+            <a href="#" class="tag-link"><span>#</span> haikyuu movie</a>
+        </div>
+    </div>
+
+    <div class="article-list">
+        <a href="pages/berita.html" class="article-item">
+            <div class="article-img"><img src="https://picsum.photos/200" alt="News"></div>
+            <div class="article-content">
+                <h2>Sutradara Ungkap Alasan Kenapa Solo Leveling Menjadi Sangat Populer</h2>
+                <div class="article-meta">AnimeNews | 1 jam yang lalu</div>
             </div>
         </a>
-
-        <a href="pages/quotes.html" class="news-card">
-            <div class="news-image">
-                <img src="https://via.placeholder.com/120" alt="Quotes">
-            </div>
-            <div class="news-info">
-                <h2>10 Kata-Kata Mutiara Itachi Uchiha yang Paling Menyentuh Hati</h2>
-                <div class="news-meta">QuotesAnime | 3 jam yang lalu</div>
-            </div>
-        </a>
-
-        <a href="pages/1-itachi.html" class="news-card">
-            <div class="news-image">
-                <img src="https://via.placeholder.com/120" alt="Karakter">
-            </div>
-            <div class="news-info">
-                <h2>Analisis Kekuatan Genjutsu Terkuat milik Klan Uchiha di Seri Naruto</h2>
-                <div class="news-meta">Database | 5 jam yang lalu</div>
+        
+        <a href="pages/quotes.html" class="article-item">
+            <div class="article-img"><img src="https://picsum.photos/201" alt="News"></div>
+            <div class="article-content">
+                <h2>Kata-Kata Bijak Eren Yeager Tentang Kebebasan yang Viral Lagi</h2>
+                <div class="article-meta">Quotes | 2 jam yang lalu</div>
             </div>
         </a>
     </div>
 
-    <footer>
-        &copy; 2026 Portal Anime Indonesia
-    </footer>
-
 </body>
 </html>
+
