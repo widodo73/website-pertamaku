@@ -3,39 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Anime Saya</title>
+    <title>AnimeNews - Portal Anime Terlengkap</title>
     <style>
-        /* CSS Sederhana agar tampilan lebih modern */
-        body { font-family: sans-serif; background-color: #1a1a1a; color: white; padding: 20px; }
-        nav { background: #333; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
-        nav a { color: #00d4ff; margin-right: 20px; text-decoration: none; font-weight: bold; }
-        nav a:hover { text-decoration: underline; }
-        .container { background: #222; padding: 20px; border-radius: 8px; border: 1px solid #444; }
-        h1 { color: #ff4500; }
-        .menu-list { line-height: 2; }
+        /* Gaya Dasar */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f4f4f4; color: #333; }
+        a { text-decoration: none; color: inherit; }
+
+        /* Header & Navigasi */
+        header { background-color: #ffffff; padding: 15px 20px; border-bottom: 2px solid #e0e0e0; sticky; top: 0; z-index: 100; }
+        .logo { font-size: 24px; font-weight: bold; color: #e74c3c; }
+        nav { margin-top: 10px; overflow-x: auto; white-space: nowrap; padding-bottom: 5px; }
+        nav a { margin-right: 20px; font-weight: 600; color: #555; font-size: 14px; }
+        nav a:hover { color: #e74c3c; }
+
+        /* Bagian Tag Terpopuler (Inspirasi Gambar) */
+        .trending-tags { background: white; padding: 15px 20px; margin-top: 10px; }
+        .trending-tags h3 { font-size: 16px; margin-bottom: 10px; color: #2980b9; }
+        .tag-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .tag-item { font-size: 14px; font-weight: bold; color: #444; }
+        .tag-item span { color: #e74c3c; margin-right: 5px; }
+
+        /* Daftar Artikel / Berita */
+        .content { padding: 15px; }
+        .news-card { display: flex; background: white; margin-bottom: 15px; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .news-image { width: 120px; height: 120px; background-color: #ddd; flex-shrink: 0; }
+        .news-image img { width: 100%; height: 100%; object-fit: cover; }
+        .news-info { padding: 12px; }
+        .news-info h2 { font-size: 16px; margin: 0 0 8px 0; line-height: 1.4; color: #222; }
+        .news-meta { font-size: 12px; color: #888; }
+
+        /* Tombol Footer Aktif */
+        footer { text-align: center; padding: 20px; font-size: 12px; color: #aaa; }
     </style>
 </head>
 <body>
 
-    <nav>
-        <a href="index.html">Beranda</a>
-        <a href="pages/berita.html">Berita Anime</a>
-        <a href="pages/quotes.html">Quotes</a>
-        <a href="pages/karakter.html">Daftar Karakter</a>
-    </nav>
+    <header>
+        <div class="logo">Anime<span>News</span></div>
+        <nav>
+            <a href="index.html">Terpopuler</a>
+            <a href="#">Rekomendasi</a>
+            <a href="pages/quotes.html">Quotes</a>
+            <a href="pages/berita.html">Berita</a>
+            <a href="#">Jadwal Rilis</a>
+        </nav>
+    </header>
 
-    <div class="container">
-        <h1>Selamat Datang di Portal Anime</h1>
-        <p>Pilih kategori yang ingin kamu lihat:</p>
-        
-        <div class="menu-list">
-            <ul>
-                <li><a href="pages/quotes.html" style="color: #ffce00;">Lihat Quotes Anime Hari Ini</a></li>
-                <li><a href="pages/berita.html" style="color: #ffce00;">Baca Berita Anime Terbaru</a></li>
-                <li><a href="pages/1-itachi.html" style="color: #ffce00;">Profil Karakter: Itachi Uchiha</a></li>
-            </ul>
+    <div class="trending-tags">
+        <h3># Tag Terpopuler</h3>
+        <div class="tag-list">
+            <div class="tag-item"><span>#</span> solo leveling</div>
+            <div class="tag-item"><span>#</span> gear 5 luffy</div>
+            <div class="tag-item"><span>#</span> blue lock s2</div>
+            <div class="tag-item"><span>#</span> uzumaki naruto</div>
+            <div class="tag-item"><span>#</span> movie anime 2026</div>
         </div>
     </div>
+
+    <div class="content">
+        <a href="pages/berita.html" class="news-card">
+            <div class="news-image">
+                <img src="https://via.placeholder.com/120" alt="News"> </div>
+            <div class="news-info">
+                <h2>Sutradara Ungkap Bocoran Terbaru Mengenai Kelanjutan Anime Solo Leveling</h2>
+                <div class="news-meta">AnimeNews | 1 jam yang lalu</div>
+            </div>
+        </a>
+
+        <a href="pages/quotes.html" class="news-card">
+            <div class="news-image">
+                <img src="https://via.placeholder.com/120" alt="Quotes">
+            </div>
+            <div class="news-info">
+                <h2>10 Kata-Kata Mutiara Itachi Uchiha yang Paling Menyentuh Hati</h2>
+                <div class="news-meta">QuotesAnime | 3 jam yang lalu</div>
+            </div>
+        </a>
+
+        <a href="pages/1-itachi.html" class="news-card">
+            <div class="news-image">
+                <img src="https://via.placeholder.com/120" alt="Karakter">
+            </div>
+            <div class="news-info">
+                <h2>Analisis Kekuatan Genjutsu Terkuat milik Klan Uchiha di Seri Naruto</h2>
+                <div class="news-meta">Database | 5 jam yang lalu</div>
+            </div>
+        </a>
+    </div>
+
+    <footer>
+        &copy; 2026 Portal Anime Indonesia
+    </footer>
 
 </body>
 </html>
