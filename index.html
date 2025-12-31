@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Anime Quotes Daily</title>
-
 <style>
 body{
     margin:0;
@@ -12,8 +11,6 @@ body{
     background:#f4f5f7;
     color:#222;
 }
-
-/* ===== HEADER ===== */
 .site-header{
     background:#0b0b0b;
     color:white;
@@ -55,8 +52,6 @@ body{
     color:#d60000;
     border-bottom:2px solid #d60000;
 }
-
-/* ===== LAYOUT ===== */
 .container{
     max-width:1100px;
     margin:20px auto;
@@ -66,36 +61,27 @@ body{
 }
 main{flex:3;}
 aside{flex:1;}
-
-/* ===== CONTENT CARD ===== */
 .card{
     background:white;
     margin-bottom:20px;
     border-radius:6px;
     overflow:hidden;
     box-shadow:0 2px 6px rgba(0,0,0,.08);
-}
-.card img{
-    width:100%;
-    height:260px;
-    object-fit:cover;
+    padding:15px;
 }
 .card h2{
-    margin:15px;
     font-size:20px;
+    margin-bottom:10px;
 }
 .quote{
-    margin:0 15px 10px;
     font-style:italic;
-    font-size:15px;
+    margin-bottom:5px;
 }
 .meta{
-    margin:0 15px 15px;
+    margin-top:10px;
     font-size:13px;
     color:#666;
 }
-
-/* ===== SIDEBAR ===== */
 .sidebar-box{
     background:white;
     padding:15px;
@@ -103,38 +89,9 @@ aside{flex:1;}
     border-radius:6px;
     box-shadow:0 2px 6px rgba(0,0,0,.08);
 }
-.sidebar-box h3{
-    margin-top:0;
-    font-size:16px;
-}
-.sidebar-box p,
-.sidebar-box li{
-    font-size:14px;
-}
-.sidebar-box ul{
-    padding-left:18px;
-}
-
-/* ===== PAGINATION ===== */
-.pagination{
-    display:flex;
-    gap:10px;
-    justify-content:center;
-    margin:30px 0;
-}
-.pagination a{
-    text-decoration:none;
-    padding:6px 12px;
-    border:1px solid #ccc;
-    color:#222;
-    font-size:14px;
-}
-.pagination a:hover{
-    background:#d60000;
-    color:white;
-}
-
-/* ===== FOOTER ===== */
+.sidebar-box h3{margin-top:0;font-size:16px;}
+.sidebar-box p, .sidebar-box li{font-size:14px;}
+.sidebar-box ul{padding-left:18px;}
 footer{
     background:#111;
     color:#aaa;
@@ -142,8 +99,6 @@ footer{
     padding:20px;
     font-size:13px;
 }
-
-/* ===== RESPONSIVE ===== */
 @media(max-width:768px){
     .container{flex-direction:column;}
     .tagline{display:none;}
@@ -152,7 +107,6 @@ footer{
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="site-header">
     <div class="header-top">
         <div class="logo">Anime Quotes Daily</div>
@@ -160,110 +114,118 @@ footer{
     </div>
     <div class="navbar">
         <div class="nav-container">
-            <a href="index.html">Home</a>
             <a href="#gojo">Gojo</a>
             <a href="#itachi">Itachi</a>
             <a href="#levi">Levi</a>
             <a href="#kakashi">Kakashi</a>
+            <a href="#tanjiro">Tanjiro</a>
         </div>
     </div>
 </header>
 
-<!-- CONTENT -->
 <div class="container">
-
 <main>
 
 <!-- Gojo -->
 <div class="card" id="gojo">
-    <img src="https://i.ibb.co/4pDNDk1/gojo.png" alt="Gojo Satoru">
-    <h2>Gojo Satoru</h2>
-    <p class="quote">"Kalau kamu lemah hari ini, jangan salahkan dunia besok."</p>
-    <p class="quote">"Orang kuat tidak ribut, dia membuktikan."</p>
-    <p class="quote">"Dunia ini nggak adil, makanya kamu harus lebih kuat."</p>
-    <p class="quote">"Jangan berharap dimengerti jika kamu belum berani berdiri."</p>
-    <p class="quote">"Kekuatan tanpa mental akan runtuh."</p>
-    <p class="quote">"Hari ini lemah, besok bangkit."</p>
-    <p class="quote">"Percaya diri adalah kunci menang."</p>
-    <p class="quote">"Tetap tenang, tetap kuat."</p>
-    <p class="quote">"Hidup itu pertarungan."</p>
-    <p class="quote">"Jangan takut gagal, takutlah untuk tidak mencoba."</p>
-    <p class="meta">— Jujutsu Kaisen</p>
+<h2>Gojo Satoru</h2>
+<p class="quote">"Kalau kamu lemah hari ini, jangan salahkan dunia besok."</p>
+<p class="quote">"Orang kuat tidak ribut, dia membuktikan."</p>
+<p class="quote">"Dunia ini nggak adil, makanya kamu harus lebih kuat."</p>
+<p class="quote">"Jangan berharap dimengerti jika kamu belum berani berdiri."</p>
+<p class="quote">"Kekuatan tanpa mental akan runtuh."</p>
+<p class="quote">"Hari ini lemah, besok bangkit."</p>
+<p class="quote">"Percaya diri adalah kunci menang."</p>
+<p class="quote">"Tetap tenang, tetap kuat."</p>
+<p class="quote">"Hidup itu pertarungan."</p>
+<p class="quote">"Jangan takut gagal, takutlah untuk tidak mencoba."</p>
+<p class="meta">— Jujutsu Kaisen</p>
 </div>
 
 <!-- Itachi -->
 <div class="card" id="itachi">
-    <img src="https://i.ibb.co/3SmM9vK/itachi.png" alt="Itachi Uchiha">
-    <h2>Itachi Uchiha</h2>
-    <p class="quote">"Orang lemah selalu menyalahkan keadaan."</p>
-    <p class="quote">"Pengorbanan jarang dipahami oleh yang tidak menjalaninya."</p>
-    <p class="quote">"Kebenaran kadang terlalu berat untuk diterima."</p>
-    <p class="quote">"Aku memilih menanggung kebencian demi kedamaian."</p>
-    <p class="quote">"Tidak semua pahlawan ingin dikenang."</p>
-    <p class="quote">"Kesedihan itu pilihan."</p>
-    <p class="quote">"Sabar adalah kekuatan."</p>
-    <p class="quote">"Diam bukan berarti lemah."</p>
-    <p class="quote">"Hidup penuh konsekuensi."</p>
-    <p class="quote">"Jangan menilai orang dari luar saja."</p>
-    <p class="meta">— Naruto Shippuden</p>
+<h2>Itachi Uchiha</h2>
+<p class="quote">"Orang lemah selalu menyalahkan keadaan."</p>
+<p class="quote">"Pengorbanan jarang dipahami oleh yang tidak menjalaninya."</p>
+<p class="quote">"Kebenaran kadang terlalu berat untuk diterima."</p>
+<p class="quote">"Aku memilih menanggung kebencian demi kedamaian."</p>
+<p class="quote">"Tidak semua pahlawan ingin dikenang."</p>
+<p class="quote">"Kesedihan itu pilihan."</p>
+<p class="quote">"Sabar adalah kekuatan."</p>
+<p class="quote">"Diam bukan berarti lemah."</p>
+<p class="quote">"Hidup penuh konsekuensi."</p>
+<p class="quote">"Jangan menilai orang dari luar saja."</p>
+<p class="meta">— Naruto Shippuden</p>
 </div>
 
 <!-- Levi -->
 <div class="card" id="levi">
-    <img src="https://i.ibb.co/3Rr0wB5/levi.png" alt="Levi Ackerman">
-    <h2>Levi Ackerman</h2>
-    <p class="quote">"Kalau ragu, kamu sudah kalah."</p>
-    <p class="quote">"Tidak bertindak adalah pilihan terburuk."</p>
-    <p class="quote">"Hasil datang dari keputusan, bukan doa saja."</p>
-    <p class="quote">"Berhenti berharap, mulai bergerak."</p>
-    <p class="quote">"Latihan tanpa henti adalah kunci."</p>
-    <p class="quote">"Kesabaran itu pahit, tapi hasilnya manis."</p>
-    <p class="quote">"Tugas harus selesai, apapun caranya."</p>
-    <p class="quote">"Kekuatan tidak datang dari harapan."</p>
-    <p class="quote">"Jangan menunggu orang lain menyelamatkanmu."</p>
-    <p class="quote">"Fokus dan disiplin adalah segalanya."</p>
-    <p class="meta">— Attack on Titan</p>
+<h2>Levi Ackerman</h2>
+<p class="quote">"Kalau ragu, kamu sudah kalah."</p>
+<p class="quote">"Tidak bertindak adalah pilihan terburuk."</p>
+<p class="quote">"Hasil datang dari keputusan, bukan doa saja."</p>
+<p class="quote">"Berhenti berharap, mulai bergerak."</p>
+<p class="quote">"Latihan tanpa henti adalah kunci."</p>
+<p class="quote">"Kesabaran itu pahit, tapi hasilnya manis."</p>
+<p class="quote">"Tugas harus selesai, apapun caranya."</p>
+<p class="quote">"Kekuatan tidak datang dari harapan."</p>
+<p class="quote">"Jangan menunggu orang lain menyelamatkanmu."</p>
+<p class="quote">"Fokus dan disiplin adalah segalanya."</p>
+<p class="meta">— Attack on Titan</p>
 </div>
 
 <!-- Kakashi -->
 <div class="card" id="kakashi">
-    <img src="https://i.ibb.co/dgNqg4h/kakashi.png" alt="Kakashi Hatake">
-    <h2>Kakashi Hatake</h2>
-    <p class="quote">"Lebih baik melanggar aturan daripada meninggalkan teman."</p>
-    <p class="quote">"Seorang ninja harus selalu waspada."</p>
-    <p class="quote">"Jangan menilai orang dari apa yang terlihat."</p>
-    <p class="quote">"Pengalaman adalah guru terbaik."</p>
-    <p class="quote">"Belajar dari kesalahan sendiri."</p>
-    <p class="quote">"Rahasia bukan untuk disimpan selamanya."</p>
-    <p class="quote">"Teman adalah kekuatan."</p>
-    <p class="quote">"Kerja keras lebih penting daripada bakat."</p>
-    <p class="quote">"Fokus, cepat, dan tepat."</p>
-    <p class="quote">"Setiap misi punya risikonya."</p>
-    <p class="meta">— Naruto</p>
+<h2>Kakashi Hatake</h2>
+<p class="quote">"Lebih baik melanggar aturan daripada meninggalkan teman."</p>
+<p class="quote">"Seorang ninja harus selalu waspada."</p>
+<p class="quote">"Jangan menilai orang dari apa yang terlihat."</p>
+<p class="quote">"Pengalaman adalah guru terbaik."</p>
+<p class="quote">"Belajar dari kesalahan sendiri."</p>
+<p class="quote">"Rahasia bukan untuk disimpan selamanya."</p>
+<p class="quote">"Teman adalah kekuatan."</p>
+<p class="quote">"Kerja keras lebih penting daripada bakat."</p>
+<p class="quote">"Fokus, cepat, dan tepat."</p>
+<p class="quote">"Setiap misi punya risikonya."</p>
+<p class="meta">— Naruto</p>
+</div>
+
+<!-- Tanjiro -->
+<div class="card" id="tanjiro">
+<h2>Tanjiro Kamado</h2>
+<p class="quote">"Kekuatan sejati datang dari hati yang tulus."</p>
+<p class="quote">"Jangan menyerah, meskipun jalannya sulit."</p>
+<p class="quote">"Setiap hari adalah kesempatan untuk menjadi lebih baik."</p>
+<p class="quote">"Melindungi orang yang kamu sayangi adalah tugasmu."</p>
+<p class="quote">"Ketulusan tidak bisa dipalsukan."</p>
+<p class="quote">"Belajar dari kesalahan itu penting."</p>
+<p class="quote">"Berani menghadapi ketakutanmu."</p>
+<p class="quote">"Kebaikan selalu menemukan jalannya."</p>
+<p class="quote">"Hidup penuh tantangan, tapi tetaplah maju."</p>
+<p class="quote">"Kamu tidak sendiri dalam perjuanganmu."</p>
+<p class="meta">— Demon Slayer</p>
 </div>
 
 </main>
 
 <aside>
-
 <div class="sidebar-box">
-    <h3>Kategori</h3>
-    <ul>
-        <li>Dark Quotes</li>
-        <li>Pejuang Hidup</li>
-        <li>Kehidupan</li>
-        <li>Motivasi Ninja</li>
-        <li>Anime Populer</li>
-    </ul>
+<h3>Kategori</h3>
+<ul>
+<li>Dark Quotes</li>
+<li>Pejuang Hidup</li>
+<li>Kehidupan</li>
+<li>Motivasi Ninja</li>
+<li>Anime Populer</li>
+</ul>
 </div>
 
 <div class="sidebar-box">
-    <h3>Tentang</h3>
-    <p>
-        Website ini berisi kutipan anime dari karakter terkenal untuk motivasi, refleksi hidup, dan inspirasi bagi para pengunjung.
-    </p>
+<h3>Tentang</h3>
+<p>
+Website ini berisi kutipan anime dari karakter terkenal untuk motivasi, refleksi hidup, dan inspirasi bagi para pengunjung.
+</p>
 </div>
-
 </aside>
 
 </div>
@@ -273,4 +235,4 @@ footer{
 </footer>
 
 </body>
-</html>
+    </html>
