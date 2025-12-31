@@ -1,41 +1,101 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quotes Anime - Website Pertamaku</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #1a1a2e;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            color: white;
-        }
-        .card {
-            background: #16213e;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            max-width: 400px;
-            text-align: center;
-            border-bottom: 5px solid #e94560;
-        }
-        h1 { color: #e94560; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 2px; }
-        p { font-style: italic; font-size: 1.1rem; line-height: 1.6; margin: 20px 0; }
-        .char { font-weight: bold; color: #0f3460; background: #e94560; padding: 5px 15px; border-radius: 50px; font-size: 0.9rem; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anime Dark Quotes</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    max-width: 360px;
+    padding: 25px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(255,255,255,0.05);
+    notice: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.quote {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.character {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 12px 20px;
+    background: #ffffff;
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #bbbbbb;
+}
+</style>
 </head>
+
 <body>
 
-    <div class="card">
-        <h1>Kutipan Anime</h1>
-        <p>"Orang tidak akan tahu rasa sakit yang sesungguhnya sebelum mereka merasakan rasa sakit yang sama."</p>
-        <span class="char">Pain (Naruto Shippuden)</span>
+<div class="container">
+    <h1>Anime Dark Quotes</h1>
+
+    <div class="quote" id="quote">
+        "Aku tidak membenci dunia ini, aku hanya tidak mengharapkannya."
     </div>
+
+    <div class="character" id="character">
+        — Itachi Uchiha
+    </div>
+
+    <button onclick="gantiQuote()">Ganti Kutipan</button>
+</div>
+
+<script>
+const quotes = [
+    { text: "Aku tidak membenci dunia ini, aku hanya tidak mengharapkannya.", char: "Itachi Uchiha" },
+    { text: "Orang lemah tidak punya pilihan selain menerima takdir.", char: "Madara Uchiha" },
+    { text: "Jika kamu tidak mengambil risiko, kamu tidak bisa menciptakan masa depan.", char: "Monkey D. Luffy" },
+    { text: "Menyerah adalah pilihan, tapi aku tidak memilihnya.", char: "Levi Ackerman" },
+    { text: "Yang mati akan tetap mati, tapi yang hidup harus terus berjalan.", char: "Gojo Satoru" },
+    { text: "Kesendirian adalah harga dari kekuatan.", char: "Sasuke Uchiha" },
+    { text: "Dunia ini kejam, tapi juga indah.", char: "Mikasa Ackerman" },
+    { text: "Aku akan berjalan di jalanku sendiri meski dunia menentang.", char: "Eren Yeager" }
+];
+
+function gantiQuote() {
+    const random = Math.floor(Math.random() * quotes.length);
+    document.getElementById("quote").innerText = `"${quotes[random].text}"`;
+    document.getElementById("character").innerText = "— " + quotes[random].char;
+}
+</script>
 
 </body>
 </html>
