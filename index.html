@@ -1,138 +1,243 @@
-<!DOCTYPE html>
+HEADER
+  ├─ Nama Web + Tagline
+  └─ Menu Navigasi
+
+CONTENT
+  ├─ Kolom Kiri (Konten Utama)
+  │    ├─ Artikel / Quotes (pakai gambar)
+  │    ├─ Artikel / Quotes
+  │    └─ Pagination (Hal 1 2 3)
+  └─ Kolom Kanan (Sidebar)
+       ├─ Kategori
+       ├─ Karakter Populer
+       └─ Tentang
+
+FOOTER<!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnimeQuotes - Inspirasi Harian</title>
-    <style>
-        /* Gaya Dasar ala Portal Berita */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anime Quotes Daily</title>
 
-        /* Header Modern */
-        header {
-            background-color: #ce1126; /* Warna merah khas portal berita */
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
+<style>
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f5f7;
+    color:#222;
+}
 
-        .container {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 0 15px;
-        }
+/* ===== HEADER ===== */
+.site-header{
+    background:#0b0b0b;
+    color:white;
+}
+.header-top{
+    max-width:1100px;
+    margin:auto;
+    padding:15px;
+    display:flex;
+    align-items:center;
+}
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+.tagline{
+    margin-left:15px;
+    font-size:13px;
+    color:#bbb;
+}
+.navbar{
+    background:white;
+    border-bottom:1px solid #ddd;
+}
+.navbar .nav-container{
+    max-width:1100px;
+    margin:auto;
+    padding:0 15px;
+    display:flex;
+    gap:20px;
+}
+.navbar a{
+    text-decoration:none;
+    color:#222;
+    font-size:14px;
+    padding:12px 0;
+}
+.navbar a:hover{
+    color:#d60000;
+    border-bottom:2px solid #d60000;
+}
 
-        /* Grid Layout */
-        .quote-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
+/* ===== LAYOUT ===== */
+.container{
+    max-width:1100px;
+    margin:20px auto;
+    padding:0 15px;
+    display:flex;
+    gap:20px;
+}
+main{flex:3;}
+aside{flex:1;}
 
-        /* Card Style */
-        .card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
-        }
+/* ===== CONTENT CARD ===== */
+.card{
+    background:white;
+    margin-bottom:20px;
+    border-radius:6px;
+    overflow:hidden;
+    box-shadow:0 2px 6px rgba(0,0,0,.08);
+}
+.card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+.card h2{
+    margin:15px;
+    font-size:20px;
+}
+.quote{
+    margin:0 15px 10px;
+    font-style:italic;
+    font-size:15px;
+}
+.meta{
+    margin:0 15px 15px;
+    font-size:13px;
+    color:#666;
+}
 
-        .card:hover {
-            transform: translateY(-5px);
-        }
+/* ===== SIDEBAR ===== */
+.sidebar-box{
+    background:white;
+    padding:15px;
+    margin-bottom:20px;
+    border-radius:6px;
+    box-shadow:0 2px 6px rgba(0,0,0,.08);
+}
+.sidebar-box h3{
+    margin-top:0;
+    font-size:16px;
+}
+.sidebar-box p,
+.sidebar-box li{
+    font-size:14px;
+}
+.sidebar-box ul{
+    padding-left:18px;
+}
 
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-bottom: 3px solid #ce1126;
-        }
+/* ===== PAGINATION ===== */
+.pagination{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    margin:30px 0;
+}
+.pagination a{
+    text-decoration:none;
+    padding:6px 12px;
+    border:1px solid #ccc;
+    color:#222;
+    font-size:14px;
+}
+.pagination a:hover{
+    background:#d60000;
+    color:white;
+}
 
-        .card-content {
-            padding: 15px;
-        }
+/* ===== FOOTER ===== */
+footer{
+    background:#111;
+    color:#aaa;
+    text-align:center;
+    padding:20px;
+    font-size:13px;
+}
 
-        .character-name {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #ce1126;
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .quote-text {
-            font-style: italic;
-            line-height: 1.6;
-            color: #555;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #333;
-            color: white;
-            margin-top: 40px;
-        }
-    </style>
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    .container{flex-direction:column;}
+    .tagline{display:none;}
+}
+</style>
 </head>
 <body>
 
-<header>
-    <h1>ANIME QUOTES INDONESIA</h1>
+<!-- HEADER -->
+<header class="site-header">
+    <div class="header-top">
+        <div class="logo">Anime Quotes Daily</div>
+        <div class="tagline">Quotes Anime • Motivasi • Dark Vibes</div>
+    </div>
+    <div class="navbar">
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="gojo.html">Gojo</a>
+            <a href="itachi.html">Itachi</a>
+            <a href="levi.html">Levi</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
 </header>
 
+<!-- CONTENT -->
 <div class="container">
-    <div class="quote-grid">
 
-        <div class="card">
-            <img src="https://wallpapers.com/images/hd/itachi-uchiha-pictures-f0p9v9v1p3p1k8n5.jpg" alt="Itachi">
-            <div class="card-content">
-                <span class="character-name">Itachi Uchiha</span>
-                <p class="quote-text">"Orang-orang menjalani kehidupan mereka terikat oleh apa yang mereka anggap benar dan benar. Itulah yang mereka definisikan sebagai realitas."</p>
-            </div>
-        </div>
+<main>
 
-        <div class="card">
-            <img src="https://images.alphacoders.com/605/605581.jpg" alt="Levi">
-            <div class="card-content">
-                <span class="character-name">Levi Ackerman</span>
-                <p class="quote-text">"Jika kau tidak ingin mati, berpikirlah!"</p>
-            </div>
-        </div>
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b">
+    <h2>Gojo Satoru</h2>
+    <p class="quote">"Kalau kamu lemah hari ini, jangan salahkan dunia besok."</p>
+    <p class="quote">"Orang kuat tidak ribut, dia membuktikan."</p>
+    <p class="meta">Jujutsu Kaisen</p>
+</div>
 
-        <div class="card">
-            <img src="https://wallpapercave.com/wp/wp8217573.jpg" alt="Gojo">
-            <div class="card-content">
-                <span class="character-name">Gojo Satoru</span>
-                <p class="quote-text">"Jangan khawatir, aku adalah yang terkuat."</p>
-            </div>
-        </div>
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1520975922284-9f2a17c74c79">
+    <h2>Itachi Uchiha</h2>
+    <p class="quote">"Pengorbanan jarang dipahami oleh yang tidak menjalaninya."</p>
+    <p class="quote">"Tidak semua pahlawan ingin dikenang."</p>
+    <p class="meta">Naruto Shippuden</p>
+</div>
 
-        <div class="card">
-            <img src="https://wallpaperaccess.com/full/1138241.jpg" alt="Kakashi">
-            <div class="card-content">
-                <span class="character-name">Kakashi Hatake</span>
-                <p class="quote-text">"Di dunia shinobi, mereka yang melanggar aturan adalah sampah. Tapi, mereka yang meninggalkan temannya lebih buruk dari sampah."</p>
-            </div>
-        </div>
+<div class="pagination">
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+</div>
 
-        </div>
+</main>
+
+<aside>
+
+<div class="sidebar-box">
+    <h3>Kategori</h3>
+    <ul>
+        <li>Dark Quotes</li>
+        <li>Pejuang Hidup</li>
+        <li>Kehidupan</li>
+    </ul>
+</div>
+
+<div class="sidebar-box">
+    <h3>Tentang</h3>
+    <p>
+        Website quotes anime untuk kamu yang sedang berjuang
+        dan memilih diam daripada menyerah.
+    </p>
+</div>
+
+</aside>
+
 </div>
 
 <footer>
-    <p>&copy; 2024 AnimeQuotes Portal - Berita & Inspirasi Anime</p>
+© 2025 Anime Quotes Daily
 </footer>
 
 </body>
 </html>
-
