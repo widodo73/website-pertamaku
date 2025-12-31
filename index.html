@@ -1,10 +1,41 @@
-/MyWeb                ← folder utama
-    index.html        ← halaman utama / daftar semua karakter
-    sitemap.xml
-    README.md
-    /pages            ← folder untuk semua halaman karakter
-        1-itachi.html
-        2-gojo.html
-        3-naruto.html
-        4-sasuke.html
-        5-luffy.html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Anime Saya</title>
+    <style>
+        /* CSS Sederhana agar tampilan lebih modern */
+        body { font-family: sans-serif; background-color: #1a1a1a; color: white; padding: 20px; }
+        nav { background: #333; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+        nav a { color: #00d4ff; margin-right: 20px; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .container { background: #222; padding: 20px; border-radius: 8px; border: 1px solid #444; }
+        h1 { color: #ff4500; }
+        .menu-list { line-height: 2; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="pages/berita.html">Berita Anime</a>
+        <a href="pages/quotes.html">Quotes</a>
+        <a href="pages/karakter.html">Daftar Karakter</a>
+    </nav>
+
+    <div class="container">
+        <h1>Selamat Datang di Portal Anime</h1>
+        <p>Pilih kategori yang ingin kamu lihat:</p>
+        
+        <div class="menu-list">
+            <ul>
+                <li><a href="pages/quotes.html" style="color: #ffce00;">Lihat Quotes Anime Hari Ini</a></li>
+                <li><a href="pages/berita.html" style="color: #ffce00;">Baca Berita Anime Terbaru</a></li>
+                <li><a href="pages/1-itachi.html" style="color: #ffce00;">Profil Karakter: Itachi Uchiha</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
