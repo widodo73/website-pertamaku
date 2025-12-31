@@ -3,142 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Otakudsu Quotes | Koleksi Kata Bijak Anime</title>
+    <title>Shiropoint | Home</title>
     <style>
         :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --text-color: #f8fafc;
-            --accent-color: #38bdf8;
-            --secondary-color: #94a3b8;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --bg: #f5f7fa;
+            --card: #ffffff;
+            --primary: #2d3436;
+            --accent: #00b894;
+            --text-secondary: #636e72;
         }
 
         body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
+            background-color: var(--bg);
+            color: var(--primary);
+            font-family: 'Inter', -apple-system, sans-serif;
+            margin: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
-            padding: 2rem 1rem;
         }
 
         header {
+            padding: 50px 20px;
             text-align: center;
-            margin-bottom: 3rem;
         }
 
         header h1 {
             font-size: 2.5rem;
+            margin: 0;
+            font-weight: 800;
             letter-spacing: -1px;
-            color: var(--accent-color);
-            margin-bottom: 0.5rem;
         }
 
-        header p {
-            color: var(--secondary-color);
-            font-size: 1rem;
+        header span {
+            color: var(--accent);
         }
 
         .container {
-            width: 100%;
-            max-width: 600px;
-            display: grid;
-            gap: 1.5rem;
+            width: 90%;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding-bottom: 50px;
         }
 
-        .quote-card {
-            background: var(--card-bg);
-            border-radius: 16px;
-            padding: 1.5rem;
+        .card {
+            background: var(--card);
+            padding: 15px;
+            border-radius: 20px;
             text-decoration: none;
             color: inherit;
             display: flex;
             align-items: center;
-            transition: transform 0.3s ease, border 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
         }
 
-        .quote-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent-color);
-            background: #273549;
+        .card:hover {
+            transform: scale(1.02);
+            border-color: var(--accent);
         }
 
-        .char-img {
-            width: 60px;
-            height: 60px;
-            border-radius: 12px;
+        .card img {
+            width: 55px;
+            height: 55px;
+            border-radius: 15px;
             object-fit: cover;
-            margin-right: 1.2rem;
-            background: #334155; /* Warna cadangan jika gambar error */
+            margin-right: 15px;
+            background: #eee;
         }
 
-        .char-info h2 {
-            font-size: 1.25rem;
-            margin-bottom: 0.2rem;
+        .card-info h2 {
+            font-size: 1.1rem;
+            margin: 0;
         }
 
-        .char-info span {
-            font-size: 0.85rem;
-            color: var(--secondary-color);
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        .card-info p {
+            font-size: 0.8rem;
+            margin: 0;
+            color: var(--text-secondary);
         }
 
         footer {
             margin-top: auto;
-            padding: 2rem 0;
+            padding: 30px;
             font-size: 0.8rem;
-            color: var(--secondary-color);
+            color: var(--text-secondary);
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Otakudsu Quotes</h1>
-        <p>Inspirasi dari karakter favorit Anda</p>
+        <h1>Shiro<span>point</span></h1>
+        <p>Inspirasi dalam setiap kata.</p>
     </header>
 
     <div class="container">
-        
-        <a href="itachi.html" class="quote-card">
-            <img src="img/itachi.jpg" alt="Itachi Uchiha" class="char-img">
-            <div class="char-info">
-                <span>Naruto Shippuden</span>
+        <a href="itachi.html" class="card">
+            <img src="img/itachi.jpg" alt="Itachi">
+            <div class="card-info">
                 <h2>Itachi Uchiha</h2>
+                <p>Klan Uchiha • Konoha</p>
             </div>
         </a>
 
-        <a href="gojo.html" class="quote-card">
-            <img src="img/gojo.jpg" alt="Gojo Satoru" class="char-img">
-            <div class="char-info">
-                <span>Jujutsu Kaisen</span>
+        <a href="gojo.html" class="card">
+            <img src="img/gojo.jpg" alt="Gojo">
+            <div class="card-info">
                 <h2>Gojo Satoru</h2>
+                <p>Jujutsu High • Special Grade</p>
             </div>
         </a>
-
-        <a href="lainnya.html" class="quote-card">
-            <img src="img/random.jpg" alt="Karakter Lain" class="char-img">
-            <div class="char-info">
-                <span>Multi-Anime</span>
-                <h2>Karakter Lain</h2>
-            </div>
-        </a>
-
     </div>
 
     <footer>
-        &copy; 2025 Otakudsu Quotes. All Rights Reserved.
+        &copy; 2025 Shiropoint.
     </footer>
 
 </body>
