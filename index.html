@@ -4,53 +4,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shiropoint | Itachi Uchiha Quotes</title>
+    
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-        body { background: #ffffff; color: #1a1a1a; line-height: 1.6; }
-        header { padding: 40px 20px; text-align: center; border-bottom: 1px solid #eee; }
-        .logo { font-size: 24px; font-weight: 800; letter-spacing: 1px; }
+        /* CSS RESTORASI MODERN */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: 'Inter', sans-serif; 
+        }
+
+        body { 
+            background: #fdfdfd; 
+            color: #2d3436; 
+            line-height: 1.7; 
+        }
+
+        header { 
+            padding: 60px 20px; 
+            text-align: center; 
+            background: #ffffff; 
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        .logo { 
+            font-size: 28px; 
+            font-weight: 800; 
+            letter-spacing: -0.5px; 
+            color: #2d3436; 
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
         .logo span { color: #e74c3c; }
-        .container { max-width: 650px; margin: 30px auto; padding: 0 20px; }
-        h1 { font-size: 22px; margin-bottom: 30px; text-align: center; color: #333; }
-        .quote-item { margin-bottom: 25px; padding: 20px; border-left: 4px solid #e74c3c; background: #fdfdfd; }
-        .quote-text { font-size: 17px; font-style: italic; display: block; margin-bottom: 5px; }
-        .author { font-size: 13px; font-weight: bold; color: #888; }
-        .footer-nav { text-align: center; margin: 50px 0; }
-        .btn-next { background: #000; color: #fff; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+
+        .container { 
+            max-width: 700px; 
+            margin: 40px auto; 
+            padding: 0 25px; 
+        }
+
+        h1 { 
+            font-size: 24px; 
+            margin-bottom: 40px; 
+            text-align: center; 
+            color: #2d3436; 
+            font-weight: 700;
+        }
+
+        /* Kartu Quote */
+        .quote-item { 
+            margin-bottom: 25px; 
+            padding: 30px; 
+            border-left: 5px solid #e74c3c; 
+            background: #ffffff; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .quote-item:hover { 
+            transform: translateY(-5px); 
+        }
+
+        .quote-text { 
+            font-size: 18px; 
+            font-style: italic; 
+            display: block; 
+            margin-bottom: 12px; 
+            color: #2d3436; 
+        }
+
+        .author { 
+            font-size: 14px; 
+            font-weight: 600; 
+            color: #95a5a6; 
+        }
+
+        /* Bagian Penutup / Footer */
+        footer {
+            margin-top: 80px;
+            padding: 60px 20px;
+            background: #1e293b;
+            color: #f8fafc;
+            text-align: center;
+            border-radius: 30px 30px 0 0;
+        }
+
+        .footer-content { max-width: 600px; margin: 0 auto; }
+        
+        .footer-text { 
+            font-size: 15px; 
+            opacity: 0.8; 
+            margin-bottom: 25px; 
+            font-style: italic;
+        }
+
+        .footer-links { margin-bottom: 25px; }
+
+        .footer-links a {
+            color: #e74c3c;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .footer-links a:hover { color: #ffffff; }
+
+        .copyright { 
+            font-size: 12px; 
+            opacity: 0.4; 
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+        }
     </style>
 </head>
-<body><nav style="background: #000; padding: 15px; text-align: center;">
-    <a href="index.html" style="color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold;">ITACHI</a>
-    <a href="pages/quotes.html" style="color: #888; text-decoration: none; margin: 0 15px;">GOJO SATORU</a>
-</nav>
+<body>
 
-    <header><div class="logo">SHIRO<span>POINT</span></div></header>
+    <header>
+        <a href="index.html" class="logo">Shiro<span>point</span></a>
+    </header>
+
     <div class="container">
-        <h1>20 Quotes Itachi Uchiha</h1>
-        <div class="quote-item"><span class="quote-text">"Seseorang yang tidak bisa mengakui dirinya sendiri, akan gagal."</span><span class="author">— Itachi Uchiha</span></div>
-        <div class="quote-item"><span class="quote-text">"Kau tidak perlu memaafkanku. Aku akan selalu menyayangimu."</span><span class="author">— Itachi Uchiha</span></div>
-        <div class="quote-item"><span class="quote-text">"Bahkan lawan terkuat pun selalu memiliki kelemahan."</span><span class="author">— Itachi Uchiha</span></div>
-        <div class="quote-item"><span class="quote-text">"Pengorbanan... Shinobi tanpa nama yang melindungi kedamaian."</span><span class="author">— Itachi Uchiha</span></div>
-        <div class="quote-item"><span class="quote-text">"Kesenangan hari ini akan menjadi penderitaan hari esok."</span><span class="author">— Itachi Uchiha</span></div>
-        <div class="quote-item"><span class="quote-text">"Saat kita bertumbuh, kita menyadari betapa kejamnya dunia ini."</span><span class="author">— Itachi Uchiha</span></div>
-        <div class="quote-item"><span class="quote-text">"Jangan pernah memikul semuanya sendirian."</span><span class="author">— Itachi Uchiha</span></div>
-        <div class="quote-item"><span class="quote-text">"Menjadi hebat berarti bisa menerima kekuranganmu."</span><span class="author">— Itachi Uchiha</span></div>
-        <div class="quote-item"><span class="quote-text">"Setiap orang hidup terikat oleh pengetahuan mereka sendiri."</span><span class="author">— Itachi Uchiha</span></div>
-        <div class="quote-item"><span class="quote-text">"Kita tidak tahu siapa kita sampai sebelum kematian kita."</span><span class="author">— Itachi Uchiha</span></div>
-        <div class="quote-item"><span class="quote-text">"Perubahan tidak datang jika kau terikat oleh masa lalu."</span><span class="author">— Itachi Uchiha</span></div>
-        <div class="quote-item"><span class="quote-text">"Mereka yang memalingkan wajah dari diri sendiri pasti gagal."</span><span class="author">— Itachi Uchiha</span></div>
-        <div class="quote-item"><span class="quote-text">"Dunia ini tidak sempurna, itulah mengapa kita memperbaikinya."</span><span class="author">— Itachi Uchiha</span></div>
-        <div class="quote-item"><span class="quote-text">"Kematian bukanlah akhir, tapi keabadian memori."</span><span class="author">— Itachi Uchiha</span></div>
-        <div class="quote-item"><span class="quote-text">"Kebencian hanya akan melahirkan kebencian baru."</span><span class="author">— Itachi Uchiha</span></div>
-        <div class="quote-item"><span class="quote-text">"Obsesi membuatmu buta akan kenyataan."</span><span class="author">— Itachi Uchiha</span></div>
-        <div class="quote-item"><span class="quote-text">"Keluarga adalah tempat di mana hatimu merasa tenang."</span><span class="author">— Itachi Uchiha</span></div>
-        <div class="quote-item"><span class="quote-text">"Kehidupan shinobi adalah tentang bertahan di tengah badai."</span><span class="author">— Itachi Uchiha</span></div>
-        <div class="quote-item"><span class="quote-text">"Ada kalanya orang harus membuat pilihan menyakitkan."</span><span class="author">— Itachi Uchiha</span></div>
-        <div class="quote-item"><span class="quote-text">"Aku akan selalu mengawasimu, adikku."</span><span class="author">— Itachi Uchiha</span></div>
+        <h1>Kutipan Terbaik Itachi Uchiha</h1>
 
-        <div class="footer-nav">
-            <a href="pages/quotes.html" class="btn-next">LIHAT QUOTES GOJO SATORU &rarr;</a>
+        <div class="quote-item">
+            <span class="quote-text">"Mengenal diri sendiri adalah kunci untuk mencapai kesempurnaan."</span>
+            <span class="author">Itachi Uchiha</span>
         </div>
-    </div>
+
+        <div class="quote-item">
+            <span class="quote-text">"Orang-orang menjalani kehidupan mereka terikat oleh apa yang mereka terima sebagai benar dan salah."</span>
+            <span class="author">Itachi Uchiha</span>
+        </div>
+
+        <div class="quote-item">
+            <span class="quote-text">"Bahkan lawan terkuat pun selalu memiliki kelemahan."</span>
+            <span class="author">Itachi Uchiha</span>
+        </div>
+        
+        </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo" style="color: white; margin-bottom: 15px;">Shiro<span>point</span></div>
+            <p class="footer-text">
+                Terima kasih telah berkunjung. Semoga kutipan-kutipan ini memberikan sudut pandang baru dalam menjalani hari-harimu.
+            </p>
+            <div class="footer-links">
+                <a href="index.html">Beranda</a>
+                <a href="#">Kategori</a>
+                <a href="#">Tentang</a>
+                <a href="#">Kontak</a>
+            </div>
+            <p class="copyright">&copy; 2024 Shiropoint. Dibuat dengan dedikasi.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
