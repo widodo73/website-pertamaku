@@ -1,36 +1,90 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Shiropoint - Quotes Itachi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShiroPoint | Itachi Quotes</title>
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --accent: #e74c3c;
+            --text: #f4f4f4;
+            --card-bg: #2d2d2d;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: #121212; color: var(--text); line-height: 1.6; }
+        
+        /* Navigation */
+        nav { background: var(--primary); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--accent); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; }
+        .nav-links a { color: white; text-decoration: none; margin-left: 20px; font-weight: 500; transition: 0.3s; }
+        .nav-links a:hover { color: var(--accent); }
+
+        /* Header & Intro */
+        header { padding: 60px 10%; text-align: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.alphacoders.com/201/201170.jpg'); background-size: cover; background-position: center; }
+        .intro { max-width: 800px; margin: 20px auto; padding: 20px; background: rgba(0,0,0,0.5); border-radius: 8px; }
+
+        /* Quotes Grid */
+        .container { padding: 40px 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .quote-card { background: var(--card-bg); padding: 25px; border-left: 5px solid var(--accent); border-radius: 5px; transition: transform 0.3s; }
+        .quote-card:hover { transform: translateY(-5px); }
+        .quote-text { font-style: italic; font-size: 1.1rem; margin-bottom: 10px; display: block; }
+        .quote-author { color: var(--accent); font-weight: bold; font-size: 0.9rem; }
+
+        /* Footer */
+        footer { background: var(--primary); padding: 40px 5%; text-align: center; border-top: 1px solid #333; margin-top: 50px; }
+        .footer-links { margin-bottom: 20px; }
+        .footer-links a { color: #888; text-decoration: none; margin: 0 10px; font-size: 0.9rem; }
+        .copyright { color: #555; font-size: 0.8rem; }
+    </style>
 </head>
 <body>
 
-<h1>Shiropoint</h1>
-<p>
-  Selamat datang di Shiropoint, situs sederhana yang berisi
-  kutipan karakter anime penuh makna.
-</p>
+<nav>
+    <div class="logo">ShiroPoint</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="pages/quotes.html">Gojo Quotes</a>
+        <a href="#">Categories</a>
+        <a href="#">About</a>
+    </div>
+</nav>
 
-<h2>20 Quotes Itachi Uchiha</h2>
+<header>
+    <h1>Itachi Uchiha: Kebijaksanaan Dalam Gelap</h1>
+    <div class="intro">
+        <p>Selamat datang di ShiroPoint. Halaman ini didedikasikan untuk mengeksplorasi filosofi mendalam dari Itachi Uchiha, sosok yang mengorbankan segalanya demi perdamaian. Di sini Anda akan menemukan 20 kutipan terpilih yang membahas tentang pengorbanan, realitas, dan kasih sayang.</p>
+    </div>
+</header>
 
-<ol>
-  <li>Orang yang hidup dalam kebohongan akan mati dalam kebenaran.</li>
-  <li>Aku memilih dibenci demi melindungi yang kucintai.</li>
-  <li>Pengorbanan adalah harga dari kedamaian.</li>
-  <li>Kebenaran tidak selalu membawa kebahagiaan.</li>
-  <li>Realita sering kali lebih kejam dari mimpi buruk.</li>
-  <li>Aku berjalan di jalan yang gelap sendirian.</li>
-  <li>Tidak semua pahlawan dikenang sebagai pahlawan.</li>
-  <li>Cinta adalah sumber penderitaan terbesar.</li>
-  <li>Kesepian adalah harga dari keputusan besar.</li>
-  <li>Aku menanggung dosa yang bukan milikku.</li>
-  <li>Orang lemah mencari pembenaran.</li>
-  <li>Mata bisa berbohong, hati tidak.</li>
-  <li>Perang dimulai dari kesalahpahaman.</li>
-  <li>Kedamaian membutuhkan korban.</li>
-  <li>Aku berdiri di antara cahaya dan kegelapan.</li>
-  <li>Kebenaran selalu datang terlambat.</li>
-  <li>Aku memilih jalan neraka demi dunia.</li>
-  <li>Takdir sering kali tidak adil.</li>
-  <li>Aku hidup untuk satu tujuan.</li>
+<div class="container">
+    <div class="quote-card"><span class="quote-text">"Mereka yang tidak mampu mengakui diri mereka sendiri, akan gagal."</span><span class="quote-author">- Itachi Uchiha</span></div>
+    <div class="quote-card"><span class="quote-text">"Kau fokus pada hal yang tidak penting karena kau tidak mengerti apa yang penting."</span><span class="quote-author">- Itachi Uchiha</span></div>
+    <div class="quote-card"><span class="quote-text">"Orang-orang menjalani kehidupan mereka terikat oleh apa yang mereka anggap benar."</span><span class="quote-author">- Itachi Uchiha</span></div>
+    <div class="quote-card"><span class="quote-text">"Saat ini kau tidak perlu memaafkanku, tapi apa pun yang terjadi padamu, aku akan selalu menyayangimu."</span><span class="quote-author">- Itachi Uchiha</span></div>
+    <div class="quote-card"><span class="quote-text">"Pengorbanan diri... Seorang shinobi tanpa nama yang melindungi perdamaian dari balik bayang-bayang. Itulah shinobi sejati."</span><span class="quote-author">- Itachi Uchiha</span></div>
+    <div class="quote-card"><span class="quote-text">"Bahkan lawan terkuat pun selalu memiliki kelemahan."</span><span class="quote-author">- Itachi Uchiha</span></div>
+    <div class="quote-card"><span class="quote-text">"Realitas bisa menjadi ilusi, dan ilusi bisa menjadi realitas."</span><span class="quote-author">- Itachi Uchiha</span></div>
+    <div class="quote-card"><span class="quote-text">"Tidak peduli seberapa kuat dirimu, jangan pernah menanggung semuanya sendirian."</span><span class="quote-author">- Itachi Uchiha</span></div>
+    <div class="quote-card"><span class="quote-text">"Kau tidak akan pernah menjadi Hokage jika kau tidak bisa diterima oleh orang lain."</span><span class="quote-author">- Itachi Uchiha</span></div>
+    <div class="quote-card"><span class="quote-text">"Kita tidak tahu orang macam apa kita sebenarnya sampai saat sebelum kematian kita."</span><span class="quote-author">- Itachi Uchiha</span></div>
+    <div class="quote-card"><span class="quote-text">"Setiap orang hidup dalam interpretasi mereka sendiri."</span><span class="quote-author">- Itachi Uchiha</span></div>
+    <div class="quote-card"><span class="quote-text">"Pengetahuan dan kesadaran itu samar, dan mungkin lebih baik disebut ilusi."</span><span class="quote-author">- Itachi Uchiha</span></div>
+    <div class="quote-card"><span class="quote-text">"Pertumbuhan terjadi ketika seseorang melampaui batasannya."</span><span class="quote-author">- Itachi Uchiha</span></div>
+    <div class="quote-card"><span class="quote-text">"Dunia ini tidaklah sempurna, itulah mengapa ada keindahan di dalamnya."</span><span class="quote-author">- Itachi Uchiha</span></div>
+    <div class="quote-card"><span class="quote-text">"Kematian bukanlah akhir, itu hanyalah sebuah transformasi."</span><span class="quote-author">- Itachi Uchiha</span></div>
+    <div class="quote-card"><span class="quote-text">"Kebencian hanya akan melahirkan kebencian baru."</span><span class="quote-author">- Itachi Uchiha</span></div>
+    <div class="quote-card"><span class="quote-text">"Kadang-kadang, yang paling menyakitkan adalah melihat orang yang kau cintai menderita."</span><span class="quote-author">- Itachi Uchiha</span></div>
+    <div class="quote-card"><span class="quote-text">"Keberanian adalah kemampuan untuk menghadapi ketakutanmu."</span><span class="quote-author">- Itachi Uchiha</span></div>
+    <div class="quote-card"><span class="quote-text">"Jangan biarkan masa lalumu menentukan masa depanmu."</span><span class="quote-author">- Itachi Uchiha</span></div>
+    <div class="quote-card"><span class="quote-text">"Hanya mereka yang memiliki tekad kuat yang bisa mengubah dunia."</span><span class="quote-author">- Itachi Uchiha</span></div>
+</div>
+
+<footer>
+    <div class="footer-links">
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Us</a>
+    </div>
+    <p class="copyright">&copy; 2024 ShiroPoint. All rights reserved. Created for fans by fans.</p>
+</footer>
+
+</body>
+</html>
